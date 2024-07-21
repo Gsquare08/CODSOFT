@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #e4f7f4;
+}
+
+header {
+background-color: #333;
+color: white;
+padding: 1rem;
+text-align: center;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin: 0 1rem;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+section {
+padding: 2rem;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.profile-pic {
+border-radius: 50%;
+width: 150px;
+height: 150px;
+margin-right: 2rem;
+}
+.para1{
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.project, .skill-item {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 1rem;
+margin: 1rem;
+width: 45%;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+form label {
+margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+padding: 0.5rem;
+margin-top: 0.5rem;
+}
+
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1rem;
+position: fixed;
+width: 100%;
+bottom: 0;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Personal Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#about">✉About</a></li>
+<li><a href="#projects">🎯Projects</a></li>
+<li><a href="#skills">🏆Skills</a></li>
+<li><a href="#contact">📳Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="about">
+<div class="flex-container">
+<img src="file:///C:/Users/ELCOT-Lenovo/Downloads/WhatsApp%20Image%202024-07-18%20at%209.46.55%20PM.jpeg" alt="Your Photo" class="profile-pic">
+<p class="para1">Hello! This is K.Gnanaguru , currently I am pursueing engineering and a  web developing here I have created a simple portfolio of mine.</p>
+</div>
+</section>
+
+<section id="projects">
+<h1 style="text-align: center;">Projects</h1>
+<div class="flex-container">
+<div class="project">
+<h2>Project 1: simple calculator </h2>
+<p>Through this intern I have achieved knowledge to create a simple whole functional calculator using Html,css and java</p>
+</div>
+<div class="project">
+<h2>Project 2: personal portfolio</h2>
+<p>This is my second project here,I.have created a portfolio which is filled with details of mine</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h1 style="text-align: center;">Skills</h1>
+<div class="flex-container">
+<div class="skill-item">
+<h3>HTML</h3>
+</div>
+<div class="skill-item">
+<h3>CSS</h3>
+</div>
+<div class="skill-item">
+<h3>JavaScript</h3>
+</div>
+<div class="skill-item">
+  <h3>C language</h3>
+</div>
+<div class="skill-item">
+  <h3>Python</h3>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h1 style="text-align: center;">Contact</h1>
+<div class="flex-container">
+<form id="contact-form">
+<div class="skill-item"><a href="callto:9384547206" target="_blank">Contact no.</a></div>
+<div class="skill-item"><a href="mailto:gnanaguru055@gmail.com" target="_blank">Email</a></div>
+<div class="skill-item"><a href="https://github.com/Gsquare08" target="_blank">Github</a></div>
+<div class="skill-item"><a href="https://www.linkedin.com/in/gnanaguru-karuppaiah" target="_blank">Linkedin</a></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</form>
+</section>
+
+<footer>
+<p>© 2024 Guru's portfolio. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
