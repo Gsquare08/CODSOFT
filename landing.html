@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://efrolic.github.io/css//assets/images/bg/bg-d.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature-item h3 {
+    margin-top: 20px;
+}
+
+/* About and Contact Sections */
+.about-section, .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Welcome to Our Product</h1>
+            <p>Discover the innovative solutions we offer to enhance your experience.</p>
+            <button id="cta-button">Get Started</button>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="features-container">
+            <div class="feature-item"><img src="data:image/png;base64,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"Feature 1">
+                <h3>Battery Life</h3>
+                <p>
+Longer battery life can be reliable if you work in different locations, or if there's a power outage.</p>
+            </div>
+            <div class="feature-item">
+                <img src=data:image/png;base64,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 alt="Feature 2">
+                <h3>Storage</h3>
+                <p>Built-in storage can range from 64 GB to 1 TB, but most students won't need a lot unless they're studying graphic design.</p>
+            </div>
+            <div class="feature-item">
+                <img src="data:image/jpeg;base64,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 alt="Feature 3">
+                <h3>Processor</h3>
+                <p>The processor, along with system memory, determines how many programs you can run at once, how fast they'll run, and the complexity of software you can use. Most laptops have an Intel or AMD processor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to
+
+             Gsquare, we're involved in this product with our love and we are expecting to solve the problems that is faced by our lovable users. Our team is dedicated to providing productsthat benefit customers.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Gmail: gnanaguru055@gmail.com</p>
+        <p>Instagram: iam_gsqaure</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gsquare. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', () => {
+    const ctaButton = document.getElementById('cta-button');
+    ctaButton.addEventListener('click', () => {
+        window.location.href = '#features';
+    });
+});
+
+    </script>
+</body>
+</html
